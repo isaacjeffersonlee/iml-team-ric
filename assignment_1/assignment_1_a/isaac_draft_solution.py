@@ -68,7 +68,7 @@ def average_LR_RMSE(X, y, lambdas, n_folds):
     avg_RMSE: array of floats: dim = (5,), average RMSE value for every lambda
     """
     RMSE_mat = np.zeros((n_folds, len(lambdas)))
-    kf = KFold(n_splits=n_folds, random_state=420, shuffle=True)
+    kf = KFold(n_splits=n_folds)
     for fold_idx, (train_idx, test_idx) in enumerate(kf.split(X, y)):
         for lam_idx, lam in enumerate(lambdas):
             X_train = X[train_idx]
