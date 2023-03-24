@@ -25,7 +25,7 @@ def fit(X, y, lam):
     ----------
     w: array of floats: dim = (13,), optimal parameters of ridge regression
     """
-    reg = Ridge(alpha=lam)
+    reg = Ridge(alpha=lam, fit_intercept=False)
     reg.fit(X, y)
     #w = reg.coef_
     #assert w.shape == (13,)

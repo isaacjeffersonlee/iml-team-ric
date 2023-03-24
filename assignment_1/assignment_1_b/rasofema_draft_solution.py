@@ -51,10 +51,9 @@ def fit(X, y, lam=0.5):
     w: array of floats: dim = (21,), optimal parameters of linear regression
     """
     X = transform_data(X)
-    reg = Ridge(alpha=lam)
+    reg = Ridge(alpha=lam, fit_intercept=False)
     reg.fit(X, y)
     w = reg.coef_
-    print(w.shape)
     assert w.shape == (21,)
     return w
 
