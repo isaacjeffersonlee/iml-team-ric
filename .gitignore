@@ -1,3 +1,4 @@
+
 # Created by https://www.toptal.com/developers/gitignore/api/macos,python
 # Edit at 
 https://www.toptal.com/developers/gitignore?templates=macos,python
@@ -70,7 +71,6 @@ MANIFEST
 into it.
 *.manifest
 *.spec
-
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -224,4 +224,3 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,python
-
