@@ -34,7 +34,7 @@ def transform_data(X):
     return X_transformed
 
 
-def fit(X, y, lam=0.5):
+def fit(X, y, lam=1.0):
     """
     This function receives training data points, transform them,
     and then fits the linear regression on this transformed data.
